@@ -266,7 +266,7 @@ class WC_Pagarme_Gateway extends WC_Payment_Gateway {
 	 *
 	 * @return string          Displays the error messages.
 	 */
-	protected function add_error( $messages ) {
+	public function add_error( $messages ) {
 		foreach ( $messages as $message ) {
 			wc_add_notice( $message['message'], 'error' );
 		}
